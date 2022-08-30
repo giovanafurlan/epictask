@@ -1,0 +1,26 @@
+# Listar todos
+GET http://localhost:8080/api/task
+# Authorization: Basic user d245b888-939a-424f-b837-f84c4dd1a7fc
+
+###
+
+# Detalhes
+GET http://localhost:8080/api/task/1
+
+###
+
+# Apagar
+DELETE http://localhost:8080/api/task/1
+
+###
+
+# Cadastrar
+POST http://localhost:8080/api/task
+Content-Type: application/json
+Authorization: Basic giovana@fiap.com.br 123
+
+{
+    "title": "Bug",
+    "description": "Modelar as tabelas do banco de dados",
+    "score": 100
+}
